@@ -5,6 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coffee Website</title>
 
+        <!-- Linking fontawesome for icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+        <!-- Swiper js -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
@@ -16,22 +25,33 @@
                     <h2 class="logo-text">☕ Coffee</h2>
                 </a>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Testimonial</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <button id="menu-close-button"
+                        class="fas fa-times"></button>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link">Testimonial</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#"
+                            class="nav-link">Contact</a></li>
                 </ul>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+                <div class="menu-overlay"></div>
             </nav>
         </header>
 
         <!-- Main / Hero section -->
         <main>
+            <!-- Hero Section -->
             <section class="hero-section">
                 <div class="section-content">
                     <div class="hero-details">
                         <h2 class="title">Best Coffee</h2>
-                        <h3 class="subtitle">Make your day great with our special Coffee!</h3>
+                        <h3 class="subtitle">Make your day great with our
+                            special Coffee!</h3>
                         <p class="description">
                             Welcome to our coffee paradise, where every bean
                             tells a story and every cup sparks joy.
@@ -47,8 +67,43 @@
                     </div>
                 </div>
             </section>
+
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="../images/about-image.jpg" alt
+                            class="about-image">
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title centered">About Us</h2>
+                        <p class="text">Enjoy freshly brewed coffee made from
+                            carefully selected beans, served in a warm and
+                            welcoming atmosphere. Whether you're starting your
+                            morning, catching up with friends, or simply taking
+                            a relaxing break, our coffee shop is the perfect
+                            place to enjoy great coffee and good moments.</p>
+
+                        <div class="social-link-list">
+                            <a href class="social-link"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href class="social-link"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href class="social-link"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href class="social-link"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Section -->
+
         </main>
 
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="../Js/script.js"></script>
     </body>
 </html>
