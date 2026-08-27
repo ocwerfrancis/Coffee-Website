@@ -17,3 +17,55 @@ menuOverlay.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
     menuOverlay.classList.remove('show-overlay');
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Typed('#typed-text', {
+        strings: [
+            'Make your day great with our special Coffee!',
+            'Freshly brewed, every single day.',
+            'Where every cup tells a story.',
+            'Your favorite coffee spot in town.',
+            'Rich flavor. Warm moments.'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+    });
+});
+
+const swiper = new Swiper('.slider-wrapper', {
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+    breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
+});
