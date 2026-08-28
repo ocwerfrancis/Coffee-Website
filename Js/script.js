@@ -1,7 +1,9 @@
+const navLinks = document.querySelectorAll('.nav-menu .nav-link')
 const menuOpenButton = document.getElementById('menu-open-button');
 const menuCloseButton = document.getElementById('menu-close-button');
 const navMenu = document.querySelector('.nav-menu');
 const menuOverlay = document.querySelector('.menu-overlay');
+
 
 menuOpenButton.addEventListener('click', () => {
     navMenu.classList.add('show-menu');
@@ -12,6 +14,10 @@ menuCloseButton.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
     menuOverlay.classList.remove('show-overlay');
 });
+
+for (const link of navLinks) {
+    link.addEventListener('click', () => menuCloseButton.click());
+}
 
 menuOverlay.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
@@ -28,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
             'Your favorite coffee spot in town.',
             'Rich flavor. Warm moments.'
         ],
-        typeSpeed: 50,
-        backSpeed: 30,
+        typeSpeed: 100,
+        backSpeed: 50,
         backDelay: 1500,
         loop: true,
     });

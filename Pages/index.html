@@ -36,13 +36,15 @@
                         class="fas fa-times"></button>
                     <li class="nav-item"><a href="#"
                             class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#"
+                    <li class="nav-item"><a href="#about"
                             class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#"
+                    <li class="nav-item"><a href="#menu"
+                            class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#testimonials"
                             class="nav-link">Testimonial</a></li>
-                    <li class="nav-item"><a href="#"
+                    <li class="nav-item"><a href="#gallery"
                             class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#"
+                    <li class="nav-item"><a href="#contact"
                             class="nav-link">Contact</a></li>
                 </ul>
                 <button id="menu-open-button" class="fas fa-bars"></button>
@@ -76,7 +78,7 @@
             </section>
 
             <!-- About Section -->
-            <section class="about-section">
+            <section class="about-section" id="about">
                 <div class="section-content">
                     <div class="about-image-wrapper">
                         <img src="../images/about-image.jpg" alt
@@ -106,7 +108,7 @@
             </section>
 
             <!-- Menu Section -->
-            <section class="menu-section">
+            <section class="menu-section" id="menu">
                 <div class="section-content">
                     <h2 class="section-title centered">Our Menu</h2>
                     <ul class="menu-list">
@@ -215,7 +217,7 @@
             </section>
 
             <!-- Testimonial section -->
-            <section class="testimonials-section">
+            <section class="testimonials-section" id="testimonials">
                 <div class="section-content">
                     <h2 class="section-title centered">Testimonials</h2>
                     <div class="swiper slider-container">
@@ -285,7 +287,123 @@
             </section>
 
             <!-- Gallery section -->
-            <section class="gallery-section"></section>
+            <section class="gallery-section" id="gallery">
+                <h2 class="section-title centered">Gallery</h2>
+                <div class="section-content">
+                    <ul class="gallery-list">
+                        <li class="gallery-item">
+                            <img src="../images/gallery-1.jpg" alt
+                                class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="../images/gallery-2.jpg" alt
+                                class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="../images/gallery-3.jpg" alt
+                                class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="../images/gallery-4.jpg" alt
+                                class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="../images/gallery-5.jpg" alt
+                                class="gallery-image">
+                        </li>
+                        <li class="gallery-item">
+                            <img src="../images/gallery-6.jpg" alt
+                                class="gallery-image">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact section -->
+            <section class="contact-section" id="contact">
+                <h2 class="section-title centered">Contact us</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list">
+                        <li class="contact-info">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                        </li>
+
+                        <li class="contact-info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>hello@coffeeshop.com</p>
+                        </li>
+
+                        <li class="contact-info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+1 (555) 123-4567</p>
+                        </li>
+
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Monday – Friday: 7:00 AM – 8:00 PM</p>
+                        </li>
+
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Sunday: Closed</p>
+                        </li>
+
+                        <li class="contact-info">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>www.coffeeshop.com</p>
+                        </li>
+                    </ul>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name"
+                                placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell us what's on your mind..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">© 2026 Coffee Shop</p>
+
+                    <div class="social-link-list">
+                        <a href class="social-link"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href class="social-link"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href class="social-link"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href class="social-link"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+
+                    <p class="policy-text">
+                        <a href="#" class="policy-link">Privacy Policy</a>
+                        <span class="separator">.</span>
+                        <a href="#" class="policy-link">Refund Policy</a>
+                    </p>
+                </div>
+            </footer>
         </main>
 
         <script
